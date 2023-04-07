@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@600&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Outfit:wght@400;700&display=swap');
+:root{
+    /*font*/
+    --font-family:"Barlow",sans-serif;
+    --font-family-fraunces :"Fraunces",sans-serif;
+     --font-size:18px;
+    --font-weight0:600;
+    --font-weight1:700;
+    --font-weight2:900;
+    /*color*/
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan:hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+   --White:hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+     background-size: 1370px 680px;
+   font-family: var(--font-family);
+   font-size:var(--font-size);
+}
+h1,h2{
+    font-family:var(--font-family-fraunces);
+    font-weight: var(--font-weight2);
+}
+.cont{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    padding-top: 10px;
+}
+h1{
+    font-size: 60px;
+    letter-spacing: 1rem;
+}
+.cont>img{
+    width:135px;
+    margin-right:800px;
+}
+button{
+    background-color:transparent;
+    color:var(--White);
+    height: 40px;
+    width:150px;
+    border-radius: 30px;
+    border: none;
+}
+button:hover{
+    background-color:var(--White);
+    color: black;
+}
+header{
+    margin-top: 110px;
+    text-align: center;
+    color: white;
+}
+header>img{
+   margin-top: 75px;
+    height: 100px;
+    width: 30px
+}
+.container{
+    padding-top: 267px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,500px);
+}
+.text{
+    margin: 160px  100px ;
+}
+.text h2{
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 35px;
+}
+.text p{
+    color: var(--Dark-grayish-blue);
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.text1 h5{
+    text-decoration: underline double var(--Yellow);
+}
+.text2 h5{
+    text-decoration: underline double var(--Soft-red);
+}
+.container img{
+    height: 100%;
+    width: 100%;
+}
+.imag3{
+    background-image: url(./images/desktop/image-graphic-design.jpg); 
+}
+.imag3 p,.imag3 h2{
+    color: var(--Dark-desaturated-cyan);
+    text-align: center;
+}
+.imag3 h2{
+    margin-top: 340px;
+    margin-bottom: 10px;
+}
+.imag4{
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+.imag4 p,.imag4 h2{
+    color: var(--Dark-blue);
+    text-align: center;
+}
+.imag4 h2{
+    margin-top:  340px;
+    margin-bottom: 10px;
+}
+h3{
+    color: var(--Grayish-blue);
+    margin-top: 90px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-weight: var(--font-weight1);
+    letter-spacing: 0.3rem;
+}
+.person{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 400px;
+}
+.box p{
+    color: var( --Very-dark-grayish-blue);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight1);
+    margin-bottom: 20px;
+}
+.box img{
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 50%;
+}
+.name h5{ 
+    font-size: var(--font-size);
+    color: var(--Very-dark-desaturated-blue);
+    margin-top: 60px;
+    margin-bottom: 10px;
+    }
+.name p{
+    color: var(--Grayish-blue);
+    font-size: 13px;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.element img{
+    width: 100%;
+    height: 400px;
+}
+footer{
+    margin: 0;
+    background-color: hsl(168, 50%, 66%);
+    color:var(--Dark-moderate-cyan);
+}
+.end{
+    display:grid;
+    grid-template-rows: repeat(3,100px);
+    text-align: center;
+}
+.sunny img{
+    margin-top: 40px;
+    width: 150px;  
+}
+.about{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.social img:hover{
+background-color:white ;
+}
+@media screen and (orientation: portrait){
+    body{
+      background-image: url(./images/mobile/image-header.jpg);
+      background-repeat: no-repeat;
+      background-size: 375px ;
+    }
+    header{
+      width: 375px;
+      height: 110px;
+
+    }
+    header>img{
+        margin-top: 50px;
+     }
+     nav{
+        width: 375px;
+     }
+       h1{
+        font-size: 30px;
+      }
+      .cont button{
+     display: none;
+    }
+    .cont img{
+      margin-top: 10px;
+      margin-right: 200px;
+    }
+ 
+    .container{
+     margin-top:0 px;
+       display: flex;
+       flex-direction: column;
+       width:375px;
+    }
+    .imag1{
+        order: 1;
+        background-image: url(./images/mobile/image-transform.jpg);
+    }
+    .text1{
+        order: 2;
+        height: 80px;
+    }
+    .imag2{
+        order: 3;
+        background-image: url(./images/mobile/image-stand-out.jpg);
+    }
+    .text2{
+        order: 4;
+        height: 80px;
+    }
+    .imag3{
+        order: 5;
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-size: 375px;
+    }
+    .imag4{
+        order: 6;
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-size: 375px;
+    }
+    .text{
+       height: 250px;
+       text-align: center;
+       margin-top: 0px;
+       margin-left: 15px;
+    }
+     .text h2,.text p,.text h5{
+        text-align: center;
+        width: 300px;
+    }
+    .text h2{
+        margin-top: 40px;
+    }
+    .text p{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .image {
+        height: 600px;
+        width: 375px;
+    }
+    .imag3 h2,.imag4 h2{
+      padding-top: 30px;
+    }
+    .imag3 p,.imag4 p{
+        padding-top: 20px;
+        width: 350px;
+        font-size: 16px;
+        text-align: center;
+        
+    }
+    .text h5{
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+     
+        .person{
+        display: flex;
+        flex-direction: column;
+        padding-top: 3px;
+        height: 900px;
+     }
+     .card{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,500px);
+    }
+    .card img{
+        height: 500px;
+    }
+    }
